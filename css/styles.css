@@ -1,0 +1,135 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-size: 2rem;
+}
+
+/* Main container with a smooth box-shadow */
+.container {
+  display: flex;
+  min-height: 100vh;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background-color: #3E0A21; /* Burgundy color */
+  padding: 40px 20px;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  color: #f7f7f7;
+  
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 25px;
+  line-height: 0.75;
+}
+
+.sidebar ul li a {
+  color: #f7f7f7;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px;
+  display: block;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+/* Main Content */
+/* Main Content */
+.main-content {
+    flex: 1;
+    height: 100vh; /* Set to full viewport height */
+    padding: 50px;
+    background-color: rgb(241, 226, 226);
+    display: flex;
+    justify-content: flex-start; /* Align content to the top */
+    flex-direction: column;  
+  }
+  
+
+/* Home Section Styles */
+.home-section {
+  text-align: center;
+}
+
+.profile-image {
+  width: 500px;
+  height: 500px;
+  
+  border: 5px solid #3E0A21;
+  padding: 10px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  color: #3E0A21;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+
+/* Button Style */
+.button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3E0A21;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #7B2631;
+}
